@@ -16,14 +16,47 @@
 
     <div class="container">
         <div class="celsius">
-            Enter your temperature in degrees Celsius
-            <input type="number" name="Celsius" id="celsius">
+            <div>
+                Enter your temperature in &deg; Celsius
+                <input type="number" name="Celsius" id="celsius">
+            </div>
+            <div id="outputFahrenheit" class="outputBox">
+
+            </div>
+            <div>
+                <button onclick="fahrenheitCalc()">
+                    CONVERT
+                </button>
+            </div>
+        </div>
+        <div class="reset">
+            <button onclick="location.reload()">RESET</button>
         </div>
         <div class="fahrenheit">
-            Enter your temperature in degrees Fahrenheit
+            <div>
+                Enter your temperature in &deg; Fahrenheit
             <input type="number" name="Fahrenheit" id="fahrenheit">
+            </div>
+            <div id="outputCelsius" class="outputBox">
+                
+            </div>
+            <div>
+                <button onclick="celsiusCalc()">
+                    CONVERT
+                </button>
+            </div>
         </div>
     </div>
+
+    <div class="divider">
+
+    </div>
+    
+    <footer>
+        Copyright &copy; 2023
+        <br>
+        Designed and Curated by Luke Evertson
+    </footer>
 
     <script src="src/app.js"></script>
 </body>

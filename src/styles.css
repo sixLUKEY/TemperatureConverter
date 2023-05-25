@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+
+.container{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.container div{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 1.5rem;
+    background-color: black;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.outputBox{
+    font-size: 1.5rem !important;
+    height: 20px;
+    text-align: center;
+}
+
+input{
+    height: 40px;
+    padding: 0px 10px;
+    font-size: 1.25rem;
+}
+
+button{
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 40%;
+    border: none;
+    color: white;
+    background-color: rgb(53, 53, 53);
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: rgba(53, 53, 53, 0.789);
+}
+
+button:active{
+    background-color: rgb(64, 64, 64);
+}
+
+.reset{
+    display: flex;
+    justify-content: center;
+    background-color: transparent !important;
+}
+
+.reset button{
+    width: 100% !important;
+    padding: 10px !important;
+    color: black;
+    background-color: rgb(192, 192, 192);
+}
+
+.reset button:hover{
+    background-color: rgba(192, 192, 192, 0.789);
+}
+
+.reset button:active{
+    background-color: rgba(255, 255, 255, 0.789);
+}
+
+.divider{
+    width: 40%;
+    border-top: 2px solid black;
+    margin-top: 100px;
+}
+
+footer{
+    margin-top: 50px;
+    text-align: center;
+}
+
+@media only screen and (max-width:750px) {
+
+    .container{
+      flex-direction: column !important;
+    }
+    
+    .outputBox{
+        font-size: 2rem !important;
+    }
+  }
+
+  @media only screen and (max-width:300px) {
+
+    .container{
+      flex-direction: column !important;
+    }
+    
+    .outputBox{
+        font-size: 2rem !important;
+    }
+  }

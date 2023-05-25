@@ -1,11 +1,27 @@
-// let celsius = document.getElementById('celsius');
-// let fahrenheit = document.getElementById('fahrenheit');
+let errorMessage = 'Please enter a valid temperature'
 
-let celsius= 50;
-let fahrenheit = 122;
+function fahrenheitCalc(){
+    let celsius = document.getElementById('celsius').value;
+    let fahrenheit = (celsius*9/5) +32;
+    let outputBox = document.getElementById('outputFahrenheit');
+    let message  = '&deg; F'
 
-let fahrenheitCalc = (celsius*9/5) +32;
-console.log(fahrenheitCalc);
+    if (celsius){
+    outputBox.innerHTML = fahrenheit.toFixed(2) + message;
+    } else {
+        outputBox.innerHTML = errorMessage;
+    }
+}
 
-let celsiusCalc = (fahrenheit -32)*5/9;
-console.log(celsiusCalc);
+function celsiusCalc(){
+    let fahrenheit = document.getElementById('fahrenheit').value;
+    let celsius = (fahrenheit -32)*5/9;
+    let outputBox = document.getElementById('outputCelsius');
+    let message  = '&deg; C'
+    
+    if (fahrenheit){
+    outputBox.innerHTML = celsius.toFixed(2) + message;
+    } else {
+        outputBox.innerHTML = errorMessage;
+    }   
+}
